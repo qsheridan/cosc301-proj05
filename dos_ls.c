@@ -113,6 +113,7 @@ uint16_t print_dirent(struct direntry *dirent, int indent)
                hidden?'h':' ', 
                sys?'s':' ', 
                arch?'a':' ');
+	
     }
 
     return followclust;
@@ -158,6 +159,8 @@ void traverse_root(uint8_t *image_buf, struct bpb33* bpb)
         dirent++;
     }
 }
+
+
 
 
 void usage(char *progname)
